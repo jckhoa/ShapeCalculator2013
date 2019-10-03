@@ -11,4 +11,9 @@ public:
 	virtual ~TriangleShape() = 0 {
 
 	}
+
+protected:
+	double computePerimeterFromSides(double a, double b, double c) const {
+		return a + b + c;
+	}
 };
