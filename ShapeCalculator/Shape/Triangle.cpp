@@ -48,7 +48,7 @@ std::string Triangle::getShapeName() const {
 };
 
 double Triangle::computePerimeter() const {
-	return a + b + c;
+	return computePerimeterFromSides(a, b, c);
 }
 
 double Triangle::computeArea() const {

@@ -43,7 +43,7 @@ std::string IsoscelesTriangle::getShapeName() const {
 };
 
 double IsoscelesTriangle::computePerimeter() const {
-	return side * 2 + base;
+	return computePerimeterFromSides(side, side, base);
 }
 
 double IsoscelesTriangle::computeArea() const {
