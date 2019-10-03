@@ -13,10 +13,18 @@ public:
 	virtual ~Shape3D() {}
 
 	// Compute and return the volume of the 3D shape.
-	virtual double getVolume() const = 0;
+	// if the shape is invalid, zero is returned.
+	double getVolume() const {
+		if (!isValid()) return 0.;
+		else return computeVolume();
+	}
 
 	// Compute and return the surface area of the 3D shape.
-	virtual double getSurfaceArea() const = 0;
+	// If the shape is invalid, zero is returned.
+	double getSurfaceArea() const {
+		if (!isValid()) return 0.;
+		else return computeSurfaceArea();
+	}
 
 	// Overload the function from class Shape
 	// Return the string containing volume and surface area values.
@@ -26,4 +34,10 @@ public:
 		return ss.str();
 	}
 
+protected:
+	// Compute and return the volume of the 3D shape.
+	virtual double computeVolume() const = 0;
+	
+	// Compute and return the surface area of the 3D shape.
+	virtual double computeSurfaceArea() const = 0;
 };
