@@ -44,13 +44,11 @@ std::string Rectangle::getShapeName() const {
 	return "Rectangle";
 };
 
-double Rectangle::getPerimeter() const {
-	if (!isValid()) return 0.;
+double Rectangle::computePerimeter() const {
 	return (width + height) * 2;
 }
 
-double Rectangle::getArea() const {
-	if (!isValid()) return 0.;
+double Rectangle::computeArea() const {
 	return width * height;
 }
 

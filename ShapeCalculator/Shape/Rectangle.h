@@ -43,19 +43,21 @@ public:
 	// Return the shape name of the object
 	std::string getShapeName() const;
 
-	// Compute and return the perimeter of the rectangle.
-	// Return 0. if the rectangle is invalid.
-	double getPerimeter() const;
-
-	// Compute and return the area of the rectangle.
-	// Return 0. if the rectangle is invalid.
-	double getArea() const;
-
 	// Return true if the rectangle is valid (width and height are positive), false otherwise.
 	bool isValid() const;
 
 	// Return the string containing the shape info
 	std::string getInfoString() const;
+
+protected:
+
+	// Compute and return the perimeter of the rectangle.
+	// Return 0. if impossible.
+	double computePerimeter() const;
+
+	// Compute and return the area of the rectangle.
+	// Return 0. if impossible.
+	double computeArea() const;
 
 private:
 

@@ -32,13 +32,11 @@ std::string Circle::getShapeName() const {
 	return "Circle";
 };
 
-double Circle::getPerimeter() const {
-	if (!isValid()) return 0.;
+double Circle::computePerimeter() const {
 	return radius * M_PI * 2;
 }
 
-double Circle::getArea() const {
-	if (!isValid()) return 0.;
+double Circle::computeArea() const {
 	return radius * radius * M_PI;
 }
 

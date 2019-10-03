@@ -37,19 +37,21 @@ public:
 	// Return the shape name of the object
 	std::string getShapeName() const;
 
-	// Compute and return the perimeter of the circle.
-	// Return 0. if the circle is invalid.
-	double getPerimeter() const;
-
-	// Compute and return the area of the circle
-	// Return 0. if the circle is invalid.
-	double getArea() const;
-
 	// Return true if the circle is valid (the radius is positive), false otherwise.
 	bool isValid() const;
 
 	// Return the string containing the shape info
 	std::string getInfoString() const;
+
+protected:
+
+	// Compute and return the perimeter of the circle.
+	// Return 0. if impossible
+	double computePerimeter() const;
+
+	// Compute and return the area of the circle
+	// Return 0. if impossible
+	double computeArea() const;
 
 private:
 

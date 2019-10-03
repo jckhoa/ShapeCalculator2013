@@ -47,18 +47,18 @@ std::string Triangle::getShapeName() const {
 	return "Triangle";
 };
 
-double Triangle::getPerimeter() const {
-	if (!isValid()) return 0.;
+double Triangle::computePerimeter() const {
 	return a + b + c;
 }
 
-double Triangle::getArea() const {
-	// Return 0. if the triangle is invalid
-	if (!isValid()) return 0.;
+double Triangle::computeArea() const {
 
 	// Use Heron's formula to compute its area
 	double p = getPerimeter() / 2; // compute half perimeter
-	return sqrt(p * (p - a) * (p - b) * (p - c));
+	double temp = p * (p - a) * (p - b) * (p - c);
+	
+	if (temp <= 0.) return 0.;
+	else return sqrt(temp);
 }
 
 bool Triangle::isValid() const {

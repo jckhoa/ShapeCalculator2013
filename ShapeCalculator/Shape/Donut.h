@@ -40,20 +40,21 @@ public:
 	// Return the shape name of the object
 	std::string getShapeName() const;
 
-	// Compute and return the perimeter of the donut
-	// Return 0. if the donut is invalid.
-	double getPerimeter() const;
-
-	// Compute and return the area of the donut
-	// Return 0. if the donut is invalid.
-	double getArea() const;
-
 	// Return true if the donut is valid (i.e. the internal and external circle are valid 
 	// and their outlines do not overlap), false otherwise
 	bool isValid() const;
 
 	// Return the string containing the shape info
 	std::string getInfoString() const;
+
+protected:
+	// Compute and return the perimeter of the donut
+	// Return 0. if impossible.
+	double computePerimeter() const;
+
+	// Compute and return the area of the donut
+	// Return 0. if impossible.
+	double computeArea() const;
 
 private:
 

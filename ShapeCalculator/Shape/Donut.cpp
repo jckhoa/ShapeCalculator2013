@@ -48,13 +48,11 @@ std::string Donut::getShapeName() const {
 	return "Donut";
 };
 
-double Donut::getPerimeter() const {
-	if (!isValid()) return 0.;
+double Donut::computePerimeter() const {
 	return ci.getPerimeter() + ce.getPerimeter();
 }
 
-double Donut::getArea() const {
-	if (!isValid()) return 0.;
+double Donut::computeArea() const {
 	return ce.getArea() - ci.getArea();
 }
 

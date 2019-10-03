@@ -35,13 +35,11 @@ std::string Square::getShapeName() const {
 	return "Square";
 };
 
-double Square::getPerimeter() const {
-	if (!isValid()) return 0.;
+double Square::computePerimeter() const {
 	return side * 4;
 }
 
-double Square::getArea() const {
-	if (!isValid()) return 0.;
+double Square::computeArea() const {
 	return side * side;
 }
 

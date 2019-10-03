@@ -41,15 +41,13 @@ std::string RectangularTriangle::getShapeName() const {
 	return "RectangularTriangle";
 };
 
-double RectangularTriangle::getPerimeter() const {
-	if (!isValid()) return 0.;
+double RectangularTriangle::computePerimeter() const {
 	// using Pythagore theorem to compute the hypotenuse length
 	double s3 = sqrt(s1 * s1 + s2 * s2);
 	return s1 + s2 + s3;
 }
 
-double RectangularTriangle::getArea() const {
-	if (!isValid()) return 0.;
+double RectangularTriangle::computeArea() const {
 	return s1 * s2 / 2;
 }
 

@@ -42,19 +42,21 @@ std::string IsoscelesTriangle::getShapeName() const {
 	return "IsoscelesTriangle";
 };
 
-double IsoscelesTriangle::getPerimeter() const {
-	if (!isValid()) return 0.;
+double IsoscelesTriangle::computePerimeter() const {
 	return side * 2 + base;
 }
 
-double IsoscelesTriangle::getArea() const {
-	if (!isValid()) return 0.;
-
+double IsoscelesTriangle::computeArea() const {
 	// compute height from Pythagore theorem
 	double halfBase = base / 2;
-	double height = sqrt(side * side - halfBase * halfBase);
+
+	double temp = side * side - halfBase * halfBase;
+	if (temp <= 0.) return 0.;
+	
+	double height = sqrt(temp);
 
 	return halfBase * height;
+
 }
 
 bool IsoscelesTriangle::isValid() const {
