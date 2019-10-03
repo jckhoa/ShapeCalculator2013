@@ -1,1 +1,9 @@
 ShapeCalculator.v12.suo
+Debug/
+Release/
+ShapeCalculator.opensdf
+ShapeCalculator.sdf
+ShapeCalculator/Debug
+ShapeCalculator/Release
+UnitTest/Release
+UnitTest/Debug
