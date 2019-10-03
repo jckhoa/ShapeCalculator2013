@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Shape">
+      <UniqueIdentifier>{3a21ffd7-2a5a-48c0-878d-411a06ebb402}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Command">
+      <UniqueIdentifier>{481d9000-aa4e-4bc3-b1b0-53e4f3decc8e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Shape\Circle.cpp">
+      <Filter>Shape</Filter>
+    </ClCompile>
+    <ClCompile Include="Shape\Donut.cpp">
+      <Filter>Shape</Filter>
+    </ClCompile>
+    <ClCompile Include="Shape\IsoscelesTriangle.cpp">
+      <Filter>Shape</Filter>
+    </ClCompile>
+    <ClCompile Include="Shape\Rectangle.cpp">
+      <Filter>Shape</Filter>
+    </ClCompile>
+    <ClCompile Include="Shape\RectangularTriangle.cpp">
+      <Filter>Shape</Filter>
+    </ClCompile>
+    <ClCompile Include="Shape\Square.cpp">
+      <Filter>Shape</Filter>
+    </ClCompile>
+    <ClCompile Include="Shape\Triangle.cpp">
+      <Filter>Shape</Filter>
+    </ClCompile>
+    <ClCompile Include="Command\ArgumentParser.cpp">
+      <Filter>Command</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Shape\Circle.h">
+      <Filter>Shape</Filter>
+    </ClInclude>
+    <ClInclude Include="Shape\CircleShape.h">
+      <Filter>Shape</Filter>
+    </ClInclude>
+    <ClInclude Include="Shape\Donut.h">
+      <Filter>Shape</Filter>
+    </ClInclude>
+    <ClInclude Include="Shape\IsoscelesTriangle.h">
+      <Filter>Shape</Filter>
+    </ClInclude>
+    <ClInclude Include="Shape\Rectangle.h">
+      <Filter>Shape</Filter>
+    </ClInclude>
+    <ClInclude Include="Shape\RectangleShape.h">
+      <Filter>Shape</Filter>
+    </ClInclude>
+    <ClInclude Include="Shape\RectangularTriangle.h">
+      <Filter>Shape</Filter>
+    </ClInclude>
+    <ClInclude Include="Shape\Shape.h">
+      <Filter>Shape</Filter>
+    </ClInclude>
+    <ClInclude Include="Shape\Shape2D.h">
+      <Filter>Shape</Filter>
+    </ClInclude>
+    <ClInclude Include="Shape\Shape3D.h">
+      <Filter>Shape</Filter>
+    </ClInclude>
+    <ClInclude Include="Shape\Square.h">
+      <Filter>Shape</Filter>
+    </ClInclude>
+    <ClInclude Include="Shape\Triangle.h">
+      <Filter>Shape</Filter>
+    </ClInclude>
+    <ClInclude Include="Shape\TriangleShape.h">
+      <Filter>Shape</Filter>
+    </ClInclude>
+    <ClInclude Include="Command\ArgumentParser.h">
+      <Filter>Command</Filter>
+    </ClInclude>
+    <ClInclude Include="Command\OptionBase.h">
+      <Filter>Command</Filter>
+    </ClInclude>
+    <ClInclude Include="Command\ShapeOption.h">
+      <Filter>Command</Filter>
+    </ClInclude>
+    <ClInclude Include="Command\ShapeOptionBase.h">
+      <Filter>Command</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
