@@ -20,16 +20,19 @@ public:
 	// Set the side lengths of the rectangular triangle.
 	void setDimension(double side1, double side2);
 
+	// Return the shape name of the class
+	static std::string getClassShapeName();
+
+	/////// Overriding functions ///////////
+
 	// Get the first side length of the rectangular triangle.
 	double getFirstSide() const;
 
 	// Get the second side length of the rectangular triangle.
 	double getSecondSide() const;
 
-	// Return the shape name of the class
-	static std::string getClassShapeName();
-
-	/////// Overriding functions ///////////
+	// Get the hypotenuse of the rectangular triangle
+	double getThirdSide() const;
 
 	// Return the number of double values used in serialized input
 	size_t getSerializationSize() const;
@@ -47,10 +50,6 @@ public:
 	std::string getInfoString() const;
 
 protected:
-
-	// Compute and return the perimeter of the rectangular triangle
-	// Return 0. if impossible.
-	double computePerimeter() const;
 
 	// Compute and return the area of the rectangular triangle
 	// Return 0. if impossible.

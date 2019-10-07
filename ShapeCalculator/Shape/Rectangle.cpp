@@ -44,14 +44,6 @@ std::string Rectangle::getShapeName() const {
 	return "Rectangle";
 };
 
-double Rectangle::computePerimeter() const {
-	return (width + height) * 2;
-}
-
-double Rectangle::computeArea() const {
-	return width * height;
-}
-
 bool Rectangle::isValid() const {
 	return width > 0 && height > 0;
 }

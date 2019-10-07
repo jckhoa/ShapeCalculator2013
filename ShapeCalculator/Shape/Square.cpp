@@ -27,6 +27,14 @@ double Square::getSide() const {
 	return side;
 }
 
+double Square::getWidth() const {
+	return side;
+}
+
+double Square::getHeight() const {
+	return side;
+}
+
 std::string Square::getClassShapeName() {
 	return "Square";
 }
@@ -34,14 +42,6 @@ std::string Square::getClassShapeName() {
 std::string Square::getShapeName() const {
 	return "Square";
 };
-
-double Square::computePerimeter() const {
-	return side * 4;
-}
-
-double Square::computeArea() const {
-	return side * side;
-}
 
 bool Square::isValid() const {
 	return side > 0;

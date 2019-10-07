@@ -38,6 +38,9 @@ namespace UnitTest
 		{
 			IsoscelesTriangle tri(2., 3.);
 			Assert::AreEqual(2., tri.getSide());
+			Assert::AreEqual(2., tri.getFirstSide());
+			Assert::AreEqual(2., tri.getSecondSide());
+			Assert::AreEqual(3., tri.getThirdSide());
 		}
 
 		TEST_METHOD(TestIsoscelesTriangle_GetBase)

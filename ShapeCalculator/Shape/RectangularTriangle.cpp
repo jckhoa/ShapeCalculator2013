@@ -33,6 +33,10 @@ double RectangularTriangle::getSecondSide() const {
 	return s2;
 }
 
+double RectangularTriangle::getThirdSide() const {
+	return sqrt(s1*s1 + s2*s2);
+}
+
 std::string RectangularTriangle::getClassShapeName() {
 	return "RectangularTriangle";
 }
@@ -40,12 +44,6 @@ std::string RectangularTriangle::getClassShapeName() {
 std::string RectangularTriangle::getShapeName() const {
 	return "RectangularTriangle";
 };
-
-double RectangularTriangle::computePerimeter() const {
-	// using Pythagore theorem to compute the hypotenuse length
-	double s3 = sqrt(s1 * s1 + s2 * s2);
-	return computePerimeterFromSides(s1, s2, s3);
-}
 
 double RectangularTriangle::computeArea() const {
 	return s1 * s2 / 2;

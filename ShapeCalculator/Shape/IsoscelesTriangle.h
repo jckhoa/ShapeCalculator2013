@@ -32,6 +32,16 @@ public:
 
 	/////// Overriding functions ///////////
 
+
+	// Get the first side length of the isosceles triangle.
+	double getFirstSide() const;
+
+	// Get the other side length of the isosceles triangle.
+	double getSecondSide() const;
+
+	// Get the base length of the isosceles triangle
+	double getThirdSide() const;
+
 	// Return the number of double values used in serialized input
 	size_t getSerializationSize() const;
 
@@ -46,16 +56,6 @@ public:
 
 	// Return the string containing the shape info
 	std::string getInfoString() const;
-
-protected:
-
-	// Compute and return the perimeter of the isosceles triangle
-	// Return 0. if impossible.
-	double computePerimeter() const;
-
-	// Compute and return the area of the isosceles triangle
-	// Return 0. if impossible.
-	double computeArea() const;
 
 private:
 

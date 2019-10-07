@@ -35,6 +35,8 @@ namespace UnitTest
 		{
 			Square rec(2.);
 			Assert::AreEqual(2., rec.getSide());
+			Assert::AreEqual(2., rec.getWidth());
+			Assert::AreEqual(2., rec.getHeight());
 		}
 
 		TEST_METHOD(TestSquare_getClassShapeName)

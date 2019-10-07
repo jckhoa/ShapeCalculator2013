@@ -50,16 +50,6 @@ public:
 	// Return the string containing the shape info
 	std::string getInfoString() const;
 
-protected:
-
-	// Compute and return the perimeter of the triangle.
-	// Return 0. if impossible.
-	double computePerimeter() const;
-
-	// Compute and return the area of the triangle.
-	// Return 0. if impossible.
-	double computeArea() const;
-
 private:
 
 	double a, b, c; // three sides of the triangle

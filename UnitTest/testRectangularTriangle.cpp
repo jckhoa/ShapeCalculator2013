@@ -34,16 +34,12 @@ namespace UnitTest
 			Assert::AreEqual(3., rec.getSecondSide());
 		}
 
-		TEST_METHOD(TestRectangularTriangle_GetFirstSide)
+		TEST_METHOD(TestRectangularTriangle_GetSide)
 		{
-			RectangularTriangle rec(2., 3.);
-			Assert::AreEqual(2., rec.getFirstSide());
-		}
-
-		TEST_METHOD(TestRectangularTriangle_GetSecondSide)
-		{
-			RectangularTriangle rec(2., 3.);
-			Assert::AreEqual(3., rec.getSecondSide());
+			RectangularTriangle rec(3., 4.);
+			Assert::AreEqual(3., rec.getFirstSide());
+			Assert::AreEqual(4., rec.getSecondSide());
+			Assert::AreEqual(5., rec.getThirdSide());
 		}
 
 		TEST_METHOD(TestRectangularTriangle_getClassShapeName)

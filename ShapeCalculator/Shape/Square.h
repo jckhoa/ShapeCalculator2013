@@ -29,6 +29,12 @@ public:
 
 	/////// Overriding functions ///////////
 
+	// Return the width of the square
+	double getWidth() const;
+
+	// Return the height of the square
+	double getHeight() const;
+
 	// Return the number of double values used in serialized input
 	size_t getSerializationSize() const;
 
@@ -43,16 +49,6 @@ public:
 
 	// Return the string containing the shape info
 	std::string getInfoString() const;
-
-protected:
-
-	// Compute and return the perimeter of the square
-	// Return 0. if impossible.
-	double computePerimeter() const;
-
-	// Compute and return the area of the square
-	// Return 0. if impossible.
-	double computeArea() const;
 
 private:
 
