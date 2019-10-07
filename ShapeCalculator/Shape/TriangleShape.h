@@ -12,8 +12,21 @@ public:
 
 	}
 
+	virtual double getFirstSide() const = 0;
+	virtual double getSecondSide() const = 0;
+	virtual double getThirdSide() const = 0;
+
 protected:
-	double computePerimeterFromSides(double a, double b, double c) const {
-		return a + b + c;
+	virtual double computePerimeter() const {
+		return getFirstSide() + getSecondSide() + getThirdSide();
+	}
+
+	virtual double computeArea() const {
+		// Use Heron's formula to compute its area
+		double p = computePerimeter() / 2; // compute half perimeter
+		double temp = p * (p - getFirstSide()) * (p - getSecondSide()) * (p - getThirdSide());
+
+		if (temp <= 0.) return 0.;
+		else return sqrt(temp);
 	}
 };
